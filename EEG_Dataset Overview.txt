@@ -1,0 +1,58 @@
+Title: EEG Dataset for Psychosocial Stress (TSST) with Personality Labels
+Subjects: 19 participants
+Experimental Phases:
+
+Baseline (pre-stress resting state)
+
+Mental Arithmetic Task (stress induction)
+
+Job Interview (social-evaluative stress)
+
+Recovery Period (post-stress resting state)
+
+Key Features
+EEG Signals:
+
+Recorded during all four TSST phases.
+
+Personality labels included for correlational analysis.
+
+Technical Specifications:
+
+Sampling Rate: 1024 Hz
+
+A/D Conversion: 24-bit resolution
+
+Electrodes: 64 Ag/AgCl scalp channels arranged in the 10-20 international system.
+
+Data Processing Pipeline
+Preprocessing:
+
+Raw EEG signals digitized and stored for analysis.
+
+Spectral Analysis:
+
+Power Spectral Density (PSD): Computed using the Welch method with Fast Fourier Transform (FFT).
+
+Segmentation: 1024-sample windows with 50% overlap for robust frequency resolution.
+
+Frequency Bands:
+
+Delta (1–4 Hz)
+
+Theta (4–8 Hz)
+
+Alpha (8–12 Hz)
+
+Beta (12–30 Hz)
+
+Gamma (30–45 Hz)
+
+Feature Matrix
+Dimensions: 76 rows × 320 columns
+
+Rows: 19 subjects × 4 experimental conditions.
+
+Columns: 64 electrodes × 5 frequency bands.
+
+Use Case: Enables analysis of neural dynamics across stress phases, electrodes, and frequency bands.
